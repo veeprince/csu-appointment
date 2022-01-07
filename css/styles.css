@@ -1,0 +1,138 @@
+.logo_img {
+  width: 100%;
+}
+#de {
+  color: white;
+}
+.csu_nav_bar {
+  border-radius: 0px;
+  background-color: #26533a;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+/* zoom social media*/
+
+.zoom {
+  padding: 0px;
+  background-color: green;
+  transition: transform 0.2s; /* Animation */
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.out-wrapper-footer {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.in-box-footer {
+  width: 100%;
+  color: white;
+  background: #26533a;
+  border: 0px solid yellow;
+}
+.control-img {
+  margin-top: 20px;
+  border: 0px solid red;
+}
+.content-move-top {
+  margin-top: -50px;
+  margin-left: 120px;
+  padding-bottom: 10px;
+  border: 0px solid red;
+}
+
+.in-box-media-footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+  background: #26533a;
+  border: 0px solid white;
+}
+.padding-left-right-bottom {
+  border-top: 20px solid #003764;
+  padding: 0 0 0 0;
+  margin-bottom: -40px;
+}
+.padding-left-right {
+  border-top: 20px solid #8ad260;
+  margin-top: 25px;
+  padding: 0 0 0 0;
+
+  margin-bottom: -40px;
+}
+.card-img-top {
+  width: 50%;
+  height: 50%;
+}
+.card {
+  margin: 50px 50px 50px 50px;
+}
+
+.card-body {
+  text-align: center;
+}
+.img-card {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  color: #254d0e;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .in-box-footer {
+    width: 100%;
+    padding-bottom: 0px;
+    clear: both;
+  }
+  .in-box-media-footer {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    background: #26533a;
+  }
+
+  .content-move-top {
+    margin-top: 5px;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    border: 0px solid red;
+  }
+  .mobile-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-font {
+    font-size: 12px;
+  }
+  .mobile-phone-icon {
+    width: 15px;
+    height: 25px;
+  }
+}
+
+.additional-footer {
+  background-color: #003764;
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .additional-footer {
+    margin-bottom: -20px;
+  }
+  /*end additional*/
+}
