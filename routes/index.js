@@ -6,7 +6,7 @@ router.get('/', async (req, res) => {
   let students;
   try {
     students = await Student.find()
-      .sort({ studentClass: 'class' })
+      .sort({ studentClass: 'name' })
       .limit(10)
       .exec();
   } catch {

@@ -33,8 +33,8 @@ router.get('/new', async (req, res) => {
 router.post('/', async (req, res) => {
   const student = new Student({
     name: req.body.name,
-    url: req.body.studentUrl,
-    class: req.body.studentClass,
+    studentUrl: req.body.studentUrl,
+    studentClass: req.body.studentClass,
   });
 
   try {
@@ -53,6 +53,7 @@ async function renderNewPage(res, student, hasError = false) {
     if (hasError) {
       params.errorMessage = 'Error Creating Student';
     }
+
     res.render('students/new', params);
   } catch {
     res.redirect('/students');
