@@ -1,11 +1,101 @@
-All student
+<div class="container">
 <h2>Search Students</h2>
+
 <form action="/students" method="GET">
   <label>Name</label>
-  <input type="text" name="name" value="<%= searchOptions.name %>">
+  <input type="text" name="name" placeholder="Search for a tutor" value="<%= searchOptions.name %>">
   <button type="submit">Search</button>
 </form>
 <br>
 <% students.forEach(student => { %>
   <div><%= student.name %></div>
 <% }) %>
+
+<!-- Footer -->
+
+    <div class="wrapper">
+      <div class="out-wrapper-footer">
+        <div class="in-box-footer">
+          <a href="#"
+            ><img
+              class="control-img mobile-img"
+              title="Chicago State University Logo"
+              src="assets\CSU_LogoBook_fooder.svg"
+              alt="Chicago State University Logo"
+              width="100"
+              height="105" /></a
+          ><span id="directedit" class="mobile-font" style="color: #ffffff">
+            <a
+              id="de"
+              href="https://a.cms.omniupdate.com/11/?skin=csu&amp;account=Chicago_State&amp;site=Chicago_State&amp;action=de&amp;path=/index.pcf"
+              >©</a
+            >
+          </span>
+          <script type="text/javascript">
+            // <![CDATA[
+            var y = new Date();
+            document.writeln(y.getFullYear());
+            // ]]>
+          </script>
+
+          <span class="mobile-font"
+            >Chicago State University&nbsp;&nbsp;<img
+              style="vertical-align: middle"
+              src="assets\marquee_bullet26px.png"
+              alt="Marquee Bullet"
+              width="10px"
+              height="10px"
+            />
+            &nbsp;All Rights Reserved</span
+          >
+          <div class="mobile-font content-move-top">
+            9501 S. King Drive Chicago, IL 60628&nbsp;&nbsp;<a
+              href="tel:7739952000"
+              target="_blank"
+              ><img
+                class="mobile-phone-icon"
+                style="vertical-align: middle"
+                src="assets\Cellphone_Icon.svg"
+                alt="Phone Icon"
+                width="20"
+                height="33" /></a
+            >&nbsp;&nbsp;(773) 995-2000
+          </div>
+        </div>
+      </div>
+      <div class="in-box-media-footer">
+        <a
+          href="https://www.linkedin.com/school/chicago-state-university"
+          target="_blank"
+        >
+          <img
+            class="zoom"
+            title="Linked in"
+            src="assets\linkedin.svg"
+            alt="Linked in"
+            width="40"
+            height="40" /></a
+        >&nbsp;&nbsp;&nbsp;&nbsp;<a
+          href="https://www.facebook.com/chicagostateuniversity"
+          target="_blank"
+          ><img
+            class="zoom"
+            title="Facebook"
+            src="assets\facebook.svg"
+            alt="Facebook"
+            width="40"
+            height="40" /></a
+        >&nbsp;&nbsp;&nbsp;&nbsp;<a
+          href="https://twitter.com/ChicagoState"
+          target="_blank"
+        >
+          <img
+            class="zoom"
+            title="Twitter"
+            src="assets\twitter.svg"
+            alt="Twitter"
+            width="40"
+            height="40"
+        /></a>
+      </div>
+    </div>

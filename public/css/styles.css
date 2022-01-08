@@ -1,14 +1,36 @@
-.logo_img {
-  width: 100%;
+.add-student {
+  position: absolute;
+  right: -99%;
+  color: rgb(11, 39, 11);
+}
+header {
+  background-color: #26533a;
+  position: relative;
+  top: -20px;
+}
+input {
+  text-align: center;
+}
+.nvbar {
+  position: relative;
+  width: 50%;
+  background-color: #26533a;
 }
 #de {
   color: white;
 }
-.csu_nav_bar {
-  border-radius: 0px;
-  background-color: #26533a;
-  color: #ffffff;
-  margin-bottom: 0px;
+.wrapper {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+.container {
+  text-align: center;
+
+  width: 100%;
+
+  /* margin: 100px 50px 50px 50px; */
 }
 
 /* zoom social media*/
@@ -29,25 +51,15 @@
 }
 
 .out-wrapper-footer {
-  margin: 0;
-  width: 100%;
+  /* margin: 0;
+  width: 100%; */
   text-align: center;
 }
 .in-box-footer {
-  width: 100%;
+  /* width: 100%; */
   color: white;
   background: #26533a;
   border: 0px solid yellow;
-}
-.control-img {
-  margin-top: 20px;
-  border: 0px solid red;
-}
-.content-move-top {
-  margin-top: -50px;
-  margin-left: 120px;
-  padding-bottom: 10px;
-  border: 0px solid red;
 }
 
 .in-box-media-footer {
@@ -57,43 +69,12 @@
   background: #26533a;
   border: 0px solid white;
 }
-.padding-left-right-bottom {
-  border-top: 20px solid #003764;
-  padding: 0 0 0 0;
-  margin-bottom: -40px;
-}
-.padding-left-right {
-  border-top: 20px solid #8ad260;
-  margin-top: 25px;
-  padding: 0 0 0 0;
-
-  margin-bottom: -40px;
-}
-.card-img-top {
-  width: 50%;
-  height: 50%;
-}
-.card {
-  margin: 50px 50px 50px 50px;
-}
-
-.card-body {
-  text-align: center;
-}
-.img-card {
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-.btn {
-  color: #254d0e;
-  text-align: center;
-}
 
 @media only screen and (max-width: 1000px) {
   .in-box-footer {
     width: 100%;
     padding-bottom: 0px;
+
     clear: both;
   }
   .in-box-media-footer {
@@ -132,7 +113,19 @@
 
 @media only screen and (max-width: 1000px) {
   .additional-footer {
-    margin-bottom: -20px;
+    width: 100%;
+    margin-right: -50px;
+    margin-bottom: -40px;
   }
   /*end additional*/
 }
+
+/* @media only screen and (max-width: 1000px) {
+  .logo_img {
+    background-color: #26533a;
+    position: absolute;
+    width: 112%;
+    z-index: -1;
+    margin: -36px -43px 16px -108px;
+  }
+} */
