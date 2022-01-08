@@ -56,6 +56,9 @@ h2 {
   margin: 20px 0;
   text-align: center;
 }
+.responsive-table {
+  padding-left: 0;
+}
 h2 small {
   font-size: 0.5em;
 }
