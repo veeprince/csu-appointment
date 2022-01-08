@@ -8,8 +8,8 @@ router.get('/', async (req, res) => {
   if (req.query.name != null && req.query.name != '') {
     query = query.regex('name', new RegExp(req.query.name, 'i'));
   }
-  if (req.query.class != null && req.query.class != '') {
-    query = query.regex('class', req.query.class);
+  if (req.query.studentClass != null && req.query.studentClass != '') {
+    query = query.regex('studentClass', req.query.studentClass);
   }
 
   try {
@@ -24,26 +24,26 @@ router.get('/', async (req, res) => {
 });
 
 // New Student Route
-router.get('/new', async (req, res) => {
-  renderNewPage(res, new Student());
-  // console.log(student);
-});
+// router.get('/new', async (req, res) => {
+//   renderNewPage(res, new Student());
+//   // console.log(student);
+// });
 
 // Create Student Route
-router.post('/', async (req, res) => {
-  const student = new Student({
-    name: req.body.name,
-    studentUrl: req.body.studentUrl,
-    studentClass: req.body.studentClass,
-  });
+// router.post('/', async (req, res) => {
+//   const student = new Student({
+//     name: req.body.name,
+//     studentUrl: req.body.studentUrl,
+//     studentClass: req.body.studentClass,
+//   });
 
-  try {
-    const newStudent = await student.save();
-    res.redirect(`students`);
-  } catch {
-    renderNewPage(res, student, true);
-  }
-});
+//   try {
+//     const newStudent = await student.save();
+//     res.redirect(`students`);
+//   } catch {
+//     renderNewPage(res, student, true);
+//   }
+// });
 
 async function renderNewPage(res, student, hasError = false) {
   try {

@@ -1,8 +1,10 @@
 <div class="page-container">
 <form action="/students" method="GET">
 
-  <input class="search-bar" type="text" name="name" placeholder="Search for a tutor" value="<%= searchOptions.name %>">
-  <!-- <input class="search-bar" type="text" name="studentClass" placeholder="Search for a class" value="<%= searchOptions.studentClass %>"> -->
+<input class="search-bar" type="text" name="studentClass" placeholder="Search for a class" value="<%= searchOptions.studentClass %>">
+<input class="search-bar" type="text" name="name" placeholder="Search for a tutor" value="<%= searchOptions.name %>">
+
+  
   <button type="submit">Search</button>
 
 </form>
@@ -20,6 +22,7 @@
        <li class="table-row">
       <div class="col col-1" data-label="Name"><%= student.name %></div>
       <div class="col col-2" data-label="Class">  <%= student.studentClass %></div>
+      
       <% if (student.studentUrl === undefined) { %>
       <div class="col col-3" ><p>No Link</p></div>
       <%} else { %>
