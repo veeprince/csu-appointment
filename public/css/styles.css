@@ -109,6 +109,9 @@ h2 small {
   flex-basis: 25%;
 }
 @media all and (max-width: 767px) {
+  .search-bar {
+    font-size: 11px !important;
+  }
   .responsive-table .table-header {
     display: none;
   }
