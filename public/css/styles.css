@@ -61,7 +61,10 @@ input {
   background: #26533a;
   border: 0px solid yellow;
 }
-
+.new-student {
+  position: relative;
+  margin-left: 40px;
+}
 .in-box-media-footer {
   width: 100%;
   text-align: center;

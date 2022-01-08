@@ -1,14 +1,15 @@
 <div class="container">
-<h2>Search Students</h2>
-
 <form action="/students" method="GET">
-  <label>Name</label>
-  <input type="text" name="name" placeholder="Search for a tutor" value="<%= searchOptions.name %>">
+
+  <input class="search-bar" type="text" name="name" placeholder="Search for a tutor" value="<%= searchOptions.name %>">
+  <input class="search-bar" type="text" name="class" placeholder="Search for a class" value="<%= searchOptions.class %>">
   <button type="submit">Search</button>
+ 
 </form>
 <br>
 <% students.forEach(student => { %>
   <div><%= student.name %></div>
+
 <% }) %>
 
 <!-- Footer -->
