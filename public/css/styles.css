@@ -109,6 +109,10 @@ h2 small {
   flex-basis: 25%;
 }
 @media all and (max-width: 767px) {
+  button {
+    text-align: center;
+    font-size: 15px !important;
+  }
   .search-bar {
     font-size: 11px !important;
   }
