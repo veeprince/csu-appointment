@@ -1,12 +1,11 @@
-.add-student {
-  position: absolute;
-  right: -99%;
-  color: rgb(11, 39, 11);
-}
 header {
   background-color: #26533a;
   position: relative;
   top: -20px;
+}
+body {
+  font-family: 'Arima Madurai' !important;
+  font-size: 22px !important;
 }
 input {
   text-align: center;
@@ -59,9 +58,10 @@ input {
   height: 40px;
 }
 button {
+  background-color: #2b744b;
   position: relative;
   width: 20%;
-
+  color: white !important;
   height: 40px;
 }
 h2 {

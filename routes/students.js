@@ -23,28 +23,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-// New Student Route
-// router.get('/new', async (req, res) => {
-//   renderNewPage(res, new Student());
-//   // console.log(student);
-// });
-
-// Create Student Route
-// router.post('/', async (req, res) => {
-//   const student = new Student({
-//     name: req.body.name,
-//     studentUrl: req.body.studentUrl,
-//     studentClass: req.body.studentClass,
-//   });
-
-//   try {
-//     const newStudent = await student.save();
-//     res.redirect(`students`);
-//   } catch {
-//     renderNewPage(res, student, true);
-//   }
-// });
-
 async function renderNewPage(res, student, hasError = false) {
   try {
     const params = {
