@@ -44,12 +44,25 @@ input {
   height: 40px;
   margin: 0 auto;
 }
+.form-field {
+  margin: 40px 0 20px 0;
+}
 .container {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+.search-bar {
+  width: 25%;
+  height: 40px;
+}
+button {
+  position: relative;
+  width: 20%;
+
+  height: 40px;
 }
 h2 {
   font-size: 26px;
