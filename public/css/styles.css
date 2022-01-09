@@ -1,7 +1,7 @@
 header {
   background-color: #26533a;
   position: relative;
-  top: -20px;
+  top: -32px;
 }
 body {
   font-family: 'Arima Madurai' !important;
@@ -109,6 +109,9 @@ h2 small {
   flex-basis: 25%;
 }
 @media all and (max-width: 767px) {
+  header {
+    top: -31px;
+  }
   button {
     text-align: center;
     font-size: 15px !important;
